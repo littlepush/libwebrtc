@@ -6,7 +6,7 @@ project(libwebrtc)
 cmake_policy(SET CMP0057 NEW)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH}
-    ${CMAKE_SOURCE_DIR}/CMakeModules)
+    ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules)
 
 find_package(Git REQUIRED)
 
