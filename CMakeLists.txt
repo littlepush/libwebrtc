@@ -36,7 +36,7 @@ if (NOT HAS_OWN_DEPOT_TOOLS)
       depot-tools
 
       GIT_REPOSITORY https://chromium.googlesource.com/chromium/tools/depot_tools
-
+      GIT_TAG main
       PREFIX ${CMAKE_BINARY_DIR}/depot_tools
 
       CONFIGURE_COMMAND ""
@@ -77,7 +77,7 @@ ExternalProject_Add(
 
     DEPENDS ${_NEXT_DEPENDS}
     GIT_REPOSITORY https://chromium.googlesource.com/external/webrtc
-
+    GIT_TAG main
     PREFIX ${CMAKE_BINARY_DIR}/webrtc
     BINARY_DIR ${CMAKE_BINARY_DIR}/webrtc/build
     DOWNLOAD_DIR ${CMAKE_BINARY_DIR}/webrtc/src
